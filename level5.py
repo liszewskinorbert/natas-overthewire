@@ -13,8 +13,8 @@ response = requests.get(url, auth = (username, password), cookies = cookies)
 #response = session.get(url, auth= (username, password))
 content=response.text
 #print(session.cookies['loggedin'])
-print(content)
+#print(content)
 
-#print(re.findall('The password for natas5 is (.*)', content)[0])
+print(re.findall('The password for natas6 is (.*)</div', content)[0])
 
 
